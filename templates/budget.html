@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Budget Page</title>
+</head>
+
+<body background="{% static "img/urlfhf.jpg" %}">
+
+<div style="position: absolute; width: 606px; height: 101px; z-index: 1; left: 373px; top: 12px" id="layer1">
+
+<table border="1" width="100%" bgcolor="#990000" bordercolor="#000000" height="79">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td width="50">
+			<div style="position: absolute; width: 470px; height: 287px; z-index: 1; left: -67px; top: 216px" id="layer5">
+<form method="POST" action="#" >
+					<!--webbot bot="SaveResults" U-File="fpweb:///_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" -->
+					<table border="1" width="100%" height="193" background="{% static "img/XYZ.jpg" %}">
+						<tr>
+							<td colspan="4" height="52">
+							<p align="center"><u><b><font size="5" COLOR="WHITE">Budget Details:
+							</font></b></u></td>
+						</tr>
+						<tr>
+							<td width="47%" align="center" height="48">
+							<font color="WHITE"><b>Adding:</b></font></td>
+							<td width="50%" height="48">
+							<a href="{% url "budgetadd" %}"><button type="button" class="btn btn-primary active">Add</button>
+              </a>
+						</tr>
+						<tr>
+							<td width="47%" align="center" height="48">
+							<font color="WHITE"><b>Searching:</b></font></td>
+							<td width="50%" height="48">
+							<a href="{% url "budgetsearch" %}"><button type="button" class="btn btn-primary active">Search</button></a>
+						</tr>
+						<tr>
+							<td width="47%" align="center" height="48">
+							<font color="WHITE"><b>Updating:</b></font></td>
+							<td width="50%" height="48">
+							<a href="{% url "budgetupdate" %}"><button type="button" class="btn btn-primary active">Update</button></a>
+						</tr>
+
+					</table>
+    </form>
+&nbsp;</div>
+			<img border="0" src="{% static "img/log1.png" %}" width="65" height="68"></td>
+			<td>
+			<p align="center"><font face="Arial Black" size="6"><b>&nbsp;Evolet Technologies</b></font></td>
+		</tr>
+	</table>
+</div>
+
+<div style="position: absolute; width: 1497px; height: 42px; z-index: 2; left: 8px; top: 138px" id="layer2">
+<div id="topnavi" style="width: 697px; height: 29px">
+		<a href="{% url "home" %}"><font color="#FFFFFF"><b>Home</b></font></a><font color="#FFFFFF">&nbsp;&nbsp;
+    </font><a href="{% url "budget" %}"><font color="#FFFFFF"><b>Budget</b></font></a><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{% url "expenses" %}"><font color="#FFFFFF"><b>Expenses</b></font></a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{% url "collection" %}"><font color="#FFFFFF"><b>Collection</b></font></a></li>&nbsp;&nbsp;&nbsp;
+      <a href="{% url "login" %}"><font color="#FFFFFF"><b>Logout</b></font></a>&nbsp;&nbsp;
+		</font>
+		<p>&nbsp;</div>
+</div>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="position: absolute; width: 1510px; height: 3px; z-index: 3; left: 9px; top: 155px" id="layer3">
+	<hr>
+	<p>&nbsp;</div>
+
+<div style="position: absolute; width: 384px; height: 471px; z-index: 4; left: 778px; top: 227px" id="layer6">
+	<img border="1" src="{% static "img/big.jpeg" %}" width="215" height="210"></div>
+<p>&nbsp;</p>
+
+</body>
+</html>
